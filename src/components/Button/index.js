@@ -1,6 +1,6 @@
 import React from 'react';
-
-import styles from './styles.css';
+import PropTypes from 'prop-types';
+import styles from './styles.module.scss';
 
 function Button({ children, onClick }) {
   return (
@@ -11,6 +11,8 @@ function Button({ children, onClick }) {
 }
 
 Button.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Button;
