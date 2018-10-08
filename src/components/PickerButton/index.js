@@ -4,11 +4,15 @@ import styles from './styles.module.scss';
 
 function Button({ onClick, imageSource, text }) {
   return (
-    <div className={styles.buttonContainer} onClick={onClick}>
-      <button className={styles.button}>
-        <img className={styles.image} alt={imageSource} src={imageSource}></img>
-        
-        <p className={styles.text}>{text}</p>
+    <div 
+      className={styles.buttonContainer} 
+      
+      onClick={onClick}>
+      <button className={styles.button} 
+        style={{ 
+          backgroundImage: `url(${imageSource})`
+        }}>
+        <span className={styles.text}>{text}</span>
       </button>
     </div>
   );

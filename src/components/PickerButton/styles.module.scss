@@ -21,6 +21,8 @@
   position: relative;
   cursor: pointer;
   flex: 1 1 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image {
@@ -36,7 +38,7 @@
   font-size: 16px;
   position: absolute;
   margin: 0;
-  padding: 50px 5px 5px 5px;
+  padding: 5px;
   color: #fefefe;
   right: 0;
   bottom: 0;
