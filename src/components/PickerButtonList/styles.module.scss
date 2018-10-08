@@ -1,8 +1,36 @@
 .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 5px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(7, 1fr);
   width: 100%;
+}
+
+@media all and (max-width: 1690px) { 
+  .list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media all and (max-width: 1280px) { 
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media all and (max-width: 980px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media all and (max-width: 736px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width: 480px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

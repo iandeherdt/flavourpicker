@@ -47,6 +47,21 @@ storiesOf('PickerButtonList', module)
         imageSource="https://placeimg.com/480/480/any"
         text="Ginger"
       />
+      <PickerButton 
+        onClick={action('clicked')} 
+        imageSource="https://placeimg.com/480/480/any"
+        text="Ginger"
+      />
+      <PickerButton 
+        onClick={action('clicked')} 
+        imageSource="https://placeimg.com/480/480/any"
+        text="Ginger"
+      />
+      <PickerButton 
+        onClick={action('clicked')} 
+        imageSource="https://placeimg.com/480/480/any"
+        text="Ginger"
+      />
     </PickerButtonList>
     
   ));
