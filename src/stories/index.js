@@ -12,7 +12,7 @@ storiesOf('Button', module)
 
 storiesOf('PickerButton', module)
   .add('default', () => (
-    <PickerButton 
+    <PickerButton
       onClick={action('clicked')} 
       imageSource="https://placeimg.com/480/480/any"
       text="Ginger"
